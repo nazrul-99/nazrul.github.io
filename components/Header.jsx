@@ -9,7 +9,7 @@ import Nav from "./Nav";
 const Header = () => {
     return(
         <header className="py-8 xl:py-12 text-foreground">
-            <div className="container mx-auto"> 
+            <div className="container mx-auto flex justify-between items-center"> 
 
                 {/*logo*/}
                 <Link href="/">
@@ -19,12 +19,14 @@ const Header = () => {
                 </Link>
 
                 {/* desktop nav */}
-                <div className="hidden xl:flex">
+                <div className="hidden xl:flex items-center gap-8">
                     <Nav/>
                     <Link href="/contact">
                     <Button>Contact Me</Button>
                     </Link>
                 </div>
+
+                {/* mobile nav */}
                 
             </div>
         </header>
