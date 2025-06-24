@@ -10,7 +10,7 @@ const nextConfig = {
     crossOrigin: 'anonymous',
     trailingSlash: true,
     env: {
-        baseUrl,
+        https://nazrul-99.github.io/portfolio/,
     },
     typescript: {
         ignoreBuildErrors: false,
