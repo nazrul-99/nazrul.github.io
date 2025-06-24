@@ -2,9 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  // added for github deployment
-   "predeploy": "DEPLOY_TARGET=gh-pages NODE_ENV=production yarn build",
-    "deploy": "gh-pages -d out",
+
   "scripts": {
     "dev": "next dev",
     "build": "next build",
