@@ -9,9 +9,6 @@ const nextConfig = {
     reactStrictMode: true,
     crossOrigin: 'anonymous',
     trailingSlash: true,
-    env: {
-        "https://nazrul-99.github.io/portfolio/",
-    },
     typescript: {
         ignoreBuildErrors: false,
     },
