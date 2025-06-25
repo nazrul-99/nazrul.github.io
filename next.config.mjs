@@ -2,6 +2,8 @@
 const isGhPages = process.env.DEPLOY_TARGET === 'gh-pages';
 const isProd = process.env.NODE_ENV === 'production';
 const repo = 'portfolio';
+const baseUrl = isGhPages && isProd ? `/${repo}` : ''; // define baseUrl
+
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -9,6 +11,9 @@ const nextConfig = {
     reactStrictMode: true,
     crossOrigin: 'anonymous',
     trailingSlash: true,
+    env: {
+        baseUrl,
+    },
     typescript: {
         ignoreBuildErrors: false,
     },
